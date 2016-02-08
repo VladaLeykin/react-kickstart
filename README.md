@@ -5,19 +5,19 @@ In addition, the environment uses Babel to transform JSX expressions into JavaSc
 
 ## Installation
 1. clone the repo to you local device:
-```
+ ```
 git clone git@github.com:DanShappir/react-kickstart.git
 ```
 2. Install the required node modules:
-```
+ ```
 npm i
 ```
 3. Build the initial example:
-```
+ ```
 mkdir dst
 npm run build
 ```
 4. Start web server:
-```
+ ```
 npm start
 ```
