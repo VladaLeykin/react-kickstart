@@ -5,19 +5,27 @@ In addition, the environment uses Babel to transform JSX expressions into JavaSc
 
 ## Installation
 1. clone the repo to you local device:
- ```
-git clone git@github.com:DanShappir/react-kickstart.git
-```
+
+   ```
+   git clone git@github.com:DanShappir/react-kickstart.git
+   ```
 2. Install the required node modules:
- ```
-npm i
-```
+
+   ```
+   npm i
+   ```
 3. Build the initial example:
- ```
-mkdir dst
-npm run build
-```
+
+   ```
+   mkdir dst
+   npm run build
+   ```
 4. Start web server:
- ```
-npm start
-```
+
+   ```
+   npm start
+   ```
+
+## Updating the code
+You can stop the web server using ^C, re-run the build command `npm run build`, and start web server up again.
+Alternatively, run the web server in the background and simply rebuild after saving changes. 
