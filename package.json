@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "serve",
-    "build": "browserify src/ex3.jsx -d -o dst/bundle.js -t babelify",
+    "build": "browserify src/list-of-components/ex4.jsx -d -o dst/bundle.js -t babelify",
     "watch": "npm-watch"
   },
   "watch": {
