@@ -2,11 +2,11 @@
 
 var React = require('react');
 var ReactDOM = require('react-dom');
-var List = require('./list.jsx');
+var List = require('./List.jsx');
 
-var items = ['This','is','demo','list'];
+var items = ['This','is','demo','item'];
 
-var root = document.getElementById('root');
+var root = document.getElementById('ex4');
 
 var div = <List items={items} />;
 

@@ -3,7 +3,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var root = document.getElementById('root');
+var root = document.getElementById('ex3');
 
 var data = ['Hello', 'There', 'World', 'It\'s ex 3'];
 

@@ -2,13 +2,13 @@
 
 var React = require('react');
 var ReactDOM = require('react-dom');
-var Item = require('./item.jsx');
+var Item = require('./Item.jsx');
 
 var List = React.createClass(
     {
         render : function()
         {
-            return <ul>{this.props.items.map(i => <Item data={i}/>)}</ul>;
+            return <ul>{this.props.items.map(item => <Item data={item}/>)}</ul>;
         }
     }
 );

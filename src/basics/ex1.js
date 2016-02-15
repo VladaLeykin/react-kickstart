@@ -4,7 +4,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var root = document.getElementById('root');
+var root = document.getElementById('ex1');
 
 var div = React.createElement('ul', null,
     React.createElement('li', null, 'Hello'),
