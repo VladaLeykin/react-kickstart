@@ -10,7 +10,10 @@
     "watch": "npm-watch"
   },
   "watch": {
-    "build": "src/**/*.jsx"
+    "build": {
+      "patterns": ["src/**"],
+      "extensions": "js,jsx"
+    }
   },
   "repository": {
     "type": "git",

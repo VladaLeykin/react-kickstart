@@ -19,11 +19,6 @@ var SortableList = React.createClass(
             });
         },
         render: function () {
-            //var sortFunc = (this.state.order === "asc") ? function (a, b) {
-            //    return a - b
-            //} : function (a, b) {
-            //    return b - a
-            //};
 
             var sortedItems = _.orderBy(this.props.items, _.identity, this.state.order);
 
