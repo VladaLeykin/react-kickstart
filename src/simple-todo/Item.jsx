@@ -3,7 +3,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var Task = React.createClass(
+var Item = React.createClass(
     {
         onButtonClick(){
             this.props.setItemStatus(this.props.index, !this.props.data.done);
@@ -18,4 +18,4 @@ var Task = React.createClass(
     }
 );
 
-module.exports = Task;
+module.exports = Item;

@@ -9,21 +9,21 @@ var AppTodo = React.createClass(
     {
         getInitialState: function () {
             return {
-                tasks: {}
+                items: {}
             };
         },
         addItem: function (newItemTitle) {
             var newKey = shortid.generate();
-            this.state.tasks[newKey] = {key:newKey, title: newItemTitle, done: false};
+            this.state.items[newKey] = {key:newKey, title: newItemTitle, done: false};
             this.setState({
-                tasks: this.state.tasks
+                items: this.state.items
             });
         },
         setItemStatus: function(key, isDone)
         {
-            this.state.tasks[key].done = isDone;
+            this.state.items[key].done = isDone;
             this.setState({
-                tasks: this.state.tasks
+                items: this.state.items
             });
         },
         render: function () {
@@ -31,7 +31,7 @@ var AppTodo = React.createClass(
             return (
                 <div>
                     <Input addItem={this.addItem}/>
-                    <TaskList items = {this.state.tasks} setItemStatus={this.setItemStatus}/>
+                    <TaskList items = {this.state.items} setItemStatus={this.setItemStatus}/>
                 </div>
             );
         },

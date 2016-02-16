@@ -2,7 +2,7 @@
 
 var React = require('react');
 var ReactDOM = require('react-dom');
-var Task = require('./Task.jsx');
+var Item = require('./Item.jsx');
 
 
 var TaskList = React.createClass(
@@ -10,7 +10,7 @@ var TaskList = React.createClass(
         generateItem(key)
         {
             var item = this.props.items[key];
-            return <Task key={item.key}
+            return <Item key={item.key}
                          index={item.key}
                          data={item}
                          setItemStatus ={this.props.setItemStatus}/>;
