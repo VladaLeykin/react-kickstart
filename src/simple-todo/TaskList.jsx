@@ -9,14 +9,15 @@ var TaskList = React.createClass(
     {
         generateItem(key)
         {
-            return <Task key={this.props.items[key].key}
-                         index={this.props.items[key].key}
-                         data={this.props.items[key]}
+            var item = this.props.items[key];
+            return <Task key={item.key}
+                         index={item.key}
+                         data={item}
                          setItemStatus ={this.props.setItemStatus}/>;
         },
         render()
         {
-            return <ul>{Object.keys(this.props.items).map(key => this.generateItem(key))}</ul>;
+            return <ul>{Object.keys(this.props.items).reverse().map(key => this.generateItem(key))}</ul>;
         }
     }
 );
