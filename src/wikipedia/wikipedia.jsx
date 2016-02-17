@@ -13,7 +13,8 @@ var WikipediaSearch = React.createClass(
                 search: ""
             };
         },
-        updateList: function(){
+        throttleUpdateSearch: _.throttle(function()
+        {
             var query = encodeURIComponent(this.refs.query.value);
             var self = this;
 
@@ -24,12 +25,12 @@ var WikipediaSearch = React.createClass(
                     search: query
                 });
             });
-        },
+        },1000),
         render: function () {
             return (
                 <div>
                    <h2>Wikipedia Query</h2>
-                    <input type="text" ref="query" onChange={_.throttle(this.updateList, 5000)}/>
+                    <input type="text" ref="query" onChange={this.throttleUpdateSearch}/>
                     <List articles={this.state.articles} search={this.state.search}/>
                 </div>
             );
