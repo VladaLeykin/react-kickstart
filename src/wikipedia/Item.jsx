@@ -7,7 +7,10 @@ var Item = React.createClass(
     {
         render : function()
         {
-            return <li><a href={this.props.link}>{this.props.title}</a></li>
+            var markedLength = this.props.search.length;
+            var markedText =  this.props.title.substring(0, markedLength);
+            var notMarkedText = this.props.title.substring(markedLength);
+            return <li><a href={this.props.link}><mark>{markedText}</mark>{notMarkedText}</a></li>
         }
     }
 );

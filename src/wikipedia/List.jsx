@@ -9,7 +9,7 @@ var List = React.createClass(
     {
         render : function()
         {
-            return <ul>{this.props.articles.map(item => <Item key={shortid.generate()} title={item[0]} link={item[1]}/>)}</ul>;
+            return <ul>{this.props.articles.map(item => <Item key={shortid.generate()} search={this.props.search} title={item[0]} link={item[1]}/>)}</ul>;
         }
     }
 );

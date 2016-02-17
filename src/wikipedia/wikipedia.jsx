@@ -9,7 +9,8 @@ var WikipediaSearch = React.createClass(
     {
         getInitialState: function () {
             return {
-                articles: []
+                articles: [],
+                search: ""
             };
         },
         updateList: function(){
@@ -19,7 +20,8 @@ var WikipediaSearch = React.createClass(
             $.getJSON( 'http://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=' + query +
                 '&callback=?', function( data ) {
                 self.setState({
-                    articles: _.zip(data[1],data[3])
+                    articles: _.zip(data[1],data[3]),
+                    search: query
                 });
             });
         },
@@ -28,7 +30,7 @@ var WikipediaSearch = React.createClass(
                 <div>
                    <h2>Wikipedia Query</h2>
                     <input type="text" ref="query" onChange={_.throttle(this.updateList, 5000)}/>
-                    <List articles={this.state.articles}/>
+                    <List articles={this.state.articles} search={this.state.search}/>
                 </div>
             );
         },
