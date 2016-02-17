@@ -6,4 +6,4 @@ var AppTodo = require('./AppTodo.jsx');
 
 var root = document.getElementById('ex9');
 
-ReactDOM.render(<AppTodo/>, root);
+//ReactDOM.render(<AppTodo/>, root);

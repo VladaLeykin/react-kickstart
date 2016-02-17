@@ -25,4 +25,4 @@ for (var i = 0; i < data.length; i++)
 
 var div = <ul>{args}</ul>
 
-ReactDOM.render(div, root);
+//ReactDOM.render(div, root);

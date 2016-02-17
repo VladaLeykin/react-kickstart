@@ -10,4 +10,4 @@ var root = document.getElementById('ex4');
 
 var div = <List items={items} />;
 
-ReactDOM.render(div, root);
+//ReactDOM.render(div, root);

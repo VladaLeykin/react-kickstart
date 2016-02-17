@@ -12,5 +12,5 @@ var div = React.createElement('ul', null,
     React.createElement('li', null, 'World'));
 
 
-ReactDOM.render(div, root);
+//ReactDOM.render(div, root);
 

@@ -6,9 +6,10 @@ var ClockWithState = React.createClass(
     {
         getInitialState: function () {
             var now = new Date();
-            setInterval(this.tick, 1000);
+            var id = setInterval(this.tick, 1000);
             return {
-                time: now.getTime()
+                time: now.getTime(),
+                intervalId: id
             };
         },
         tick: function () {
@@ -17,6 +18,10 @@ var ClockWithState = React.createClass(
             this.setState({
                 time: now.getTime()
             });
+        },
+        componentWillUnmount()
+        {
+            clearInterval(this.state.intervalId);
         },
         render()
         {

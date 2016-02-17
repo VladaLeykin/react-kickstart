@@ -28,4 +28,4 @@ const B = React.createClass(
 
 var elem = <A x={2} y={4}/>;
 
-ReactDOM.render(elem, root);
+//ReactDOM.render(elem, root);

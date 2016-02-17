@@ -6,4 +6,4 @@ var App = require('./App.jsx');
 
 var root = document.getElementById('ex8');
 
-ReactDOM.render(<App/>, root);
+//ReactDOM.render(<App/>, root);

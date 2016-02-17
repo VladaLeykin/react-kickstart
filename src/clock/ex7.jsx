@@ -8,7 +8,7 @@ var root = document.getElementById('ex7');
 
 var renderClock = function()
 {
-    ReactDOM.render( <ClockWithoutState />, root);
+    //ReactDOM.render( <ClockWithoutState />, root);
 }
 
 setInterval(renderClock, 1000);
