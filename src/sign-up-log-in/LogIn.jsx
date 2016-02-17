@@ -12,8 +12,10 @@ var LogIn = React.createClass(
 
             return (
                 <div>
-                    <p>Log In</p>
-                    <span><Link to="/login/signup">SignUp</Link></span>
+                    <input type="text" placeholder="Email"/>
+                    <input type="password" placeholder="Password"/>
+                    <span>Don't have an account?</span>
+                    <Link to="/login/signup">SignUp</Link>
                 </div>
             );
         },
